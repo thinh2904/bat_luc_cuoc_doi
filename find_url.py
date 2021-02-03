@@ -13,7 +13,7 @@ def find_url(url, start_url):
     content = link_soup('a', attrs={'href': True})
     for i in content:
         a = i['href']
-        th1 = f'^{start_url},*(html|epi)$'
+        th1 = f'^{start_url}.*(html|epi)$'
         th2 = '^/.*(html|epi)$'
         if re.match(th1, a):
             url_list.add(a)
