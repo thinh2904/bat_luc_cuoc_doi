@@ -24,7 +24,7 @@ def find_url(url, start_url):
     return url_list
 
 
-#Tiếp tục tìm thêm URL cho đến khi đủ yêu cầu
+#Tiếp tục tìm thêm URL cho đến khi đủ yêu cầu:
 def find_next_url(queue, start_url, max):
     history = queue
     while (len(queue) > 0) and (len(history) < max):
