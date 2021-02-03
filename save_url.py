@@ -22,5 +22,5 @@ def save_all_file(history, max):
     for (stt, url_set) in enumerate(history):
         if stt >= max:
             break
-        save_1_file(url_set, max)
+        save_1_file(url_set, stt)
         print(f'{stt} {url_set}')
